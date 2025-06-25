@@ -219,7 +219,7 @@
 
 .poem-body-wrapper {
   display: flex;
-  justify-content: center; /* Khung thơ nằm giữa màn hình */
+  justify-content: center;
   width: 100%;
   overflow-x: auto;
   padding-bottom: 1rem;
@@ -229,23 +229,11 @@
   font-family: var(--font-body);
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   line-height: 2;
-  white-space: pre-line;     /* Xuống dòng như thơ, KHÔNG giữ thụt đầu dòng */
-  text-align: left;          /* 👈 Đây là điểm quan trọng */
+  white-space: pre-line;    
+  text-align: left;         
   max-width: 100%;
 }
-
-
-
-
-
-
-
-
-
-        /* ======================================================= */
-        /* GIAO DIỆN CHO MOBILE (< 768px)                          */
-        /* ======================================================= */
-        @media (max-width: 768px) {
+       @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
             }
@@ -253,7 +241,7 @@
             .content {
                 padding: 1.5rem;
                 padding-top: 5rem;
-                /* Tạo khoảng trống cho nút menu */
+                
             }
 
             .poem-title {
