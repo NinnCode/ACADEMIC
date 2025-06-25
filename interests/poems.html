@@ -6,20 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tuyển Tập Thơ | Nin Nichi</title>
 
-    <!-- Google Fonts: Lora cho nội dung thơ, Lato cho giao diện -->
+    <!-- Google Fonts:  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
 
-    <!-- Font Awesome cho các biểu tượng -->
+    <!-- Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
-        /* ======================================================= */
-        /* BIẾN MÀU SẮC (CSS VARIABLES) & CÀI ĐẶT CHUNG           */
-        /* ======================================================= */
         :root {
             --font-body: 'Lora', serif;
             --font-ui: 'Lato', sans-serif;
@@ -62,10 +59,9 @@
             height: 100vh;
         }
 
-        /* Nút menu toggle (hamburger) cho mobile */
+        /*  menu toggle (hamburger)  mobile */
         .menu-toggle {
             display: none;
-            /* Ẩn trên desktop */
             position: fixed;
             top: 1rem;
             left: 1rem;
@@ -81,7 +77,6 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* Lớp phủ mờ khi menu mobile mở ra */
         .overlay {
             display: none;
             position: fixed;
@@ -93,9 +88,7 @@
             z-index: 999;
         }
 
-        /* ======================================================= */
-        /* THANH BÊN (SIDEBAR)                                     */
-        /* ======================================================= */
+        /* (SIDEBAR)                                     */
         .sidebar {
             width: 300px;
             background-color: var(--color-panel-bg);
@@ -175,9 +168,7 @@
             filter: brightness(1.1);
         }
 
-        /* ======================================================= */
-        /* KHUNG NỘI DUNG CHÍNH                                    */
-        /* ======================================================= */
+        /* MAIN                             */
         .content {
             flex: 1;
             padding: 2rem;
@@ -219,7 +210,7 @@
 
 .poem-body-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Khung thơ nằm giữa màn hình */
   width: 100%;
   overflow-x: auto;
   padding-bottom: 1rem;
@@ -233,7 +224,8 @@
   text-align: left;         
   max-width: 100%;
 }
-       @media (max-width: 768px) {
+
+        @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
             }
@@ -241,7 +233,7 @@
             .content {
                 padding: 1.5rem;
                 padding-top: 5rem;
-                
+                /* Tạo khoảng trống cho nút menu */
             }
 
             .poem-title {
@@ -255,28 +247,24 @@
                 height: 100%;
                 z-index: 1000;
                 transform: translateX(-100%);
-                /* Ẩn đi mặc định */
                 box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
             }
 
             .sidebar.open {
                 transform: translateX(0);
-                /* Hiện ra khi có class 'open' */
             }
         }
     </style>
 </head>
 
 <body>
-    <!-- Nút menu chỉ hiện trên mobile -->
     <button class="menu-toggle" id="menu-toggle">
         <i class="fa-solid fa-bars"></i>
     </button>
-    <!-- Lớp phủ mờ -->
     <div class="overlay" id="overlay"></div>
 
     <div class="page-container">
-        <div class="sidebar" id="sidebar">
+        <div class="sidebar open" id="sidebar">
             <div class="sidebar-header">
                 <h2 style="text-align: center;">Poetry Collection</h2>
             </div>
@@ -297,12 +285,25 @@
 
         <div class="content">
             <div id="poem-display" class="poem-container">
-                <!-- Nội dung thơ sẽ hiển thị ở đây -->
             </div>
         </div>
     </div>
 
     <script>
+        document.addEventListener('click', function (event) {
+    const sidebar = document.getElementById('sidebar');
+    const toggleBtn = document.querySelector('.menu-toggle');
+
+
+    if (window.innerWidth <= 768 && sidebar.classList.contains('open')) {
+        const isClickInsideSidebar = sidebar.contains(event.target);
+        const isClickToggle = toggleBtn.contains(event.target);
+
+        if (!isClickInsideSidebar && !isClickToggle) {
+            sidebar.classList.remove('open');
+        }
+    }
+});
         document.addEventListener('DOMContentLoaded', () => {
             const poemListEl = document.getElementById('poemList');
             const poemDisplayEl = document.getElementById('poem-display');
@@ -623,8 +624,6 @@ const poems = {
                 document.querySelectorAll('.poem-list li').forEach(li => {
                     li.classList.toggle('active', li.dataset.poemId === id);
                 });
-
-                // Trên mobile, tự động đóng menu sau khi chọn
                 if (window.innerWidth <= 768 && sidebarEl.classList.contains('open')) {
                     toggleMenu();
                 }
@@ -646,7 +645,6 @@ const poems = {
                 themeToggleBtn.querySelector('i').className = `fa-solid ${theme === 'dark' ? 'fa-sun' : 'fa-moon'}`;
             }
 
-            // Gán sự kiện cho các nút
             menuToggleBtn.addEventListener('click', toggleMenu);
             overlayEl.addEventListener('click', toggleMenu);
             themeToggleBtn.addEventListener('click', () => {
@@ -654,7 +652,7 @@ const poems = {
                 setTheme(newTheme);
             });
 
-            // Khởi tạo trang
+
             initializePoemList();
             const savedTheme = localStorage.getItem('poem_theme') || 'dark';
             setTheme(savedTheme);

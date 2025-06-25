@@ -161,11 +161,12 @@
 
     .iframe-wrapper {
       width: 100%;
-      max-width: 500px; /* Tăng max-width để video to hơn trên màn hình lớn */
-      aspect-ratio: 16 / 9; /* ĐÂY LÀ DÒNG QUAN TRỌNG NHẤT */
+      max-width: 500px; 
+   
+      aspect-ratio: 16 / 9; 
       background-color: #000;
       border-radius: 16px;
-      overflow: hidden; /* Cần thiết để bo góc iframe bên trong */
+      overflow: hidden; 
       border: 2px solid rgba(96, 165, 250, 0.25);
       box-shadow: 0 25px 60px rgba(96, 165, 250, 0.4);
     }
@@ -232,9 +233,9 @@
       <i class="fa-solid fa-bars"></i>
     </button>
 
-    <div class="sidebar" id="sidebar">
+    <div class="sidebar open" id="sidebar">
       <div class="sidebar-header">
-        <h2 style="text-align: center;">Song List</h2style=>
+        <h2 style="text-align: center;">Song List</h2>
       </div>
       <ul id="songList" class="song-list-scrollable"></ul>
       <div class="sidebar-footer">
@@ -247,18 +248,27 @@
     <div class="content">
       <div class="video-title" id="videoTitle">Select a piece to watch</div>
       <div class="video-author" id="videoAuthor"></div>
-      <!-- <div class="iframe-wrapper"> -->
-        <!-- <video id="videoPlayer" controls>
-          <source src="" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video> -->
-
-      <!-- </div> -->
       <div class="iframe-wrapper" id="videoContainer"></div>
     </div>
   </div>
 
   <script>
+
+document.addEventListener('click', function (event) {
+    const sidebar = document.getElementById('sidebar');
+    const toggleBtn = document.querySelector('.menu-toggle');
+
+
+    if (window.innerWidth <= 768 && sidebar.classList.contains('open')) {
+        const isClickInsideSidebar = sidebar.contains(event.target);
+        const isClickToggle = toggleBtn.contains(event.target);
+
+        if (!isClickInsideSidebar && !isClickToggle) {
+            sidebar.classList.remove('open');
+        }
+    }
+});
+
  document.addEventListener('DOMContentLoaded', () => {
     // Danh sách bài hát đã được cập nhật với các FILE_ID bạn cung cấp
     const songs = {
@@ -274,34 +284,25 @@
         '10': { name: 'Jingle Bells', author: 'Written by James Lord Pierpont (1857)', fileId: '1nyzIPvdtjKi0hLFm-ma56o4RlT4_KfAW' },
     };  
 
-    // Lấy các element từ HTML
     const sidebar = document.getElementById('sidebar');
     const songList = document.getElementById('songList');
     const videoTitle = document.getElementById('videoTitle');
     const videoAuthor = document.getElementById('videoAuthor');
-    // Đây là div sẽ chứa trình phát video
     const videoContainer = document.getElementById('videoContainer');
 
-    // Tạo hàm global để có thể gọi từ onclick trong HTML
     window.toggleSidebar = function() {
         sidebar.classList.toggle('open');
     }
 
-    // Tạo hàm global để hiển thị bài hát được chọn
     window.showSong = function(id) {
         const song = songs[id];
-        // Nếu không tìm thấy bài hát thì thoát
         if (!song) return;
 
-        // Cập nhật tên bài hát và tác giả
         videoTitle.textContent = song.name;
         videoAuthor.textContent = song.author || '';
 
-        // Tạo link iframe với đuôi /preview
         const iframeSrc = `https://drive.google.com/file/d/${song.fileId}/preview`;
         
-        // Tạo một thẻ iframe mới và thay thế hoàn toàn nội dung của videoContainer
-        // Cách này đảm bảo video mới được tải một cách sạch sẽ
         videoContainer.innerHTML = `<iframe 
                                       src="${iframeSrc}" 
                                       width="100%" 
@@ -310,20 +311,17 @@
                                       allow="autoplay; fullscreen"
                                       allowfullscreen></iframe>`;
 
-        // Cập nhật trạng thái 'active' cho danh sách bên trái
         document.querySelectorAll('#songList li').forEach(li => li.classList.remove('active'));
         const activeLi = document.querySelector(`li[data-song-id='${id}']`);
         if (activeLi) {
             activeLi.classList.add('active');
         }
 
-        // Nếu màn hình nhỏ và sidebar đang mở, thì đóng nó lại sau khi chọn bài
-        if (window.innerWidth <= 768 && sidebar.classList.contains('open')) {
-            toggleSidebar();
-        }
+        if (!isFirstLoad && window.innerWidth <= 768 && sidebar.classList.contains('open')) {
+    toggleSidebar();
+}
     }
 
-    // Khởi tạo danh sách bài hát trong sidebar
     Object.keys(songs).forEach(id => {
         const li = document.createElement('li');
         li.textContent = songs[id].name;
@@ -332,7 +330,6 @@
         songList.appendChild(li);
     });
 
-    // Tự động hiển thị bài hát đầu tiên khi trang vừa tải xong
     const firstSongId = Object.keys(songs)[0];
     if (firstSongId) {
         showSong(firstSongId);
