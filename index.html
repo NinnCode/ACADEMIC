@@ -1,0 +1,1273 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap"
+        media="print" onload='this.media="all"'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css"
+        integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+        crossorigin="anonymous" media="print" onload='this.media="all"'>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEN4X51SZF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } function trackOutboundLink(e, t) { gtag("event", "click", { event_category: "outbound", event_label: e, transport_type: "beacon", event_callback: function () { t !== "_blank" && (document.location = e) } }), console.debug("Outbound link clicked: " + e) } function onClickCallback(e) { if (e.target.tagName !== "A" || e.target.host === window.location.host) return; trackOutboundLink(e.target, e.target.getAttribute("target")) } gtag("js", new Date), gtag("config", "G-XEN4X51SZF", {}), gtag("set", { cookie_flags: "SameSite=None;Secure" }), document.addEventListener("click", onClickCallback, !1)
+    </script>
+    <meta name="author" content="Nin">
+    <meta name="description" content="Student in HCMUS VNU-HCM">
+    <link rel="canonical" href="">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32.png?text=Icon">
+    <link rel="apple-touch-icon" type="image/png" href="https://via.placeholder.com/180x180.png?text=Icon">
+    <meta name="theme-color" content="#1565c0">
+    <meta property="og:site_name" content="Academic">
+    <meta property="og:title" content="Nin Nichi | Academic">
+    <meta property="og:description" content="Student in ISE and Computing">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:updated_time" content="2023-01-27T00:00:00+00:00">
+    <title>Nin Nichi | Academic</title>
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark-mode">
+
+    <aside class="search-modal" id="search">
+        <div class="container">
+            <section class="search-header">
+                <div class="row no-gutters justify-content-between mb-3">
+                    <div class="col-6">
+                        <h1>Search</h1>
+                    </div>
+                    <div class="col-6 col-search-close">
+                        <a class="js-search-close" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div id="search-box">
+                    <input name="q" id="search-query" placeholder="Search..." autocapitalize="off" autocomplete="off"
+                        autocorrect="off" spellcheck="false" type="search" class="form-control" aria-label="Search...">
+                </div>
+            </section>
+            <section class="section-search-results">
+                <div id="search-hits">
+                    <!-- Search results will appear here -->
+                    <p>Search functionality needs Fuse.js and data source.</p>
+                </div>
+            </section>
+        </div>
+    </aside>
+
+    <div class="page-header header--fixed">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+                <div class="container-xl">
+                    <!-- name/logo website -->
+                    <div class="d-none d-lg-inline-flex">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+
+                    <!-- button menu on mobile -->
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+
+                    <!-- name/logo website on mobile -->
+                    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                        <a class="navbar-brand" href="/">Academic</a>
+                    </div>
+
+                    <!-- items menu -->
+                    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+                        <ul class="navbar-nav d-md-inline-flex">
+                            <li class="nav-item"><a class="nav-link" href="#about"><span>Home</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#experience"><span>Experience</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#accomplishments"><span>Accomplishments</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#projects"><span>Projects</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#activities"><span>Other Activities</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact"><span>Contact</span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Icons on the right -->
+                    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+                        <!-- Theme Toggler -->
+                        <li class="nav-item">
+                            <a id="dark-mode-toggler" class="nav-link" href="#" title="Toggle theme"
+                                aria-label="Toggle theme">
+                                <!-- The icon inside will be changed by JavaScript (fa-moon or fa-sun) -->
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="page-body">
+        <span class="js-widget-page d-none"></span>
+
+        <section id="about" class="home-section wg-about-biography">
+            <div class="home-section-bg"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div id="profile">
+                            <img class="avatar avatar-circle" width="270" height="270" src="./img/avatar_nin.jpg"
+                                alt="Avatar">
+                            <div class="portrait-title">
+                                <h2>Nhat Ninh</h2>
+                                <h3>Student in the field of Electronics and Telecommunications Engineering</h3>
+                                <h3><a href="https://hcmus.edu.vn/" target="_blank" rel="noopener"><span>VNUHCM-US |
+                                            HCMUS</span></a></h3>
+                            </div>
+                            <ul class="network-icon" aria-hidden="true">
+                                <li><a href="#contact" aria-label="envelope"><i
+                                            class="fas fa-envelope big-icon"></i></a></li>
+                                <li><a href="https://www.facebook.com/nhat.ninh.173963" target="_blank" rel="noopener"
+                                        aria-label="facebook"><i class="fab fa-facebook big-icon"></i></a></li>
+                                <li><a href="https://github.com/NinNichiCode" target="_blank" rel="noopener"
+                                        aria-label="github"><i class="fab fa-github big-icon"></i></a></li>
+                            </ul>
+
+                            <div class="d-none d-lg-block">
+                                <h3 style="margin-top: 4.0rem;">Knowledge & skill</h3>
+                                <div class="article-style">
+                                    <ul class="ul-interests fa-ul mb-0">
+                                        <li><i class="fa-li fa-solid fa-code"></i><strong>Software:</strong> C, C#,
+                                            Python,
+                                            HTML, CSS, JavaScript, Bash, Shell scripting</li>
+                                        <li><i class="fa-li fa-solid fa-microchip"></i><strong>Hardware:</strong>
+                                            Verilog,
+                                            SystemVerilog, UVM, PCB Design</li>
+                                        <li><i class="fa-li fa-solid fa-desktop"></i><strong>MCU & FPGA:</strong>
+                                            Arduino,
+                                            STM32, ESP32, DE10 Standard,...</li>
+                                        <li><i class="fa-li fa-solid fa-tools"></i><strong>Tools:</strong> MATLAB,
+                                            Proteus, VSCode,
+                                            Vivado, QuestaSim, Synopsys ICC2,...</li>
+                                        <li><i class="fa-li fa-solid fa-people-group"></i><strong>Soft Skills:</strong>
+                                            Communication, teamwork, and project management,...</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <h1>Biography</h1>
+                        <div class="article-style">
+                            <ul>
+                                <li>Welcome to my website. Hello World from 10.7769° 106.7009° 🌏 </li>
+                                <li><i class="fas fa-graduation-cap"></i> I am a senior undergraduate student at the <a
+                                        href="https://hcmus.edu.vn/" target="_blank" rel="noopener">VNUHCM - University
+                                        Of Science </a>. My academic interests include
+                                    embedded systems, digital design, secure communication protocols and Semiconductor.
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>To me, engineering is not just solving problems,
+                                    it’s designing how the future works — securely, efficiently, and beautifully.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- =================================================================== -->
+                        <!--                    KNOWLEDGE & SKILLS on MOBILE                     -->
+                        <!-- =================================================================== -->
+                        <div class="d-lg-none">
+                            <h3 style="margin-top: 3.0rem;">Knowledge & skill</h3>
+                            <div class="article-style">
+                                <ul class="ul-interests fa-ul mb-0">
+                                    <li><i class="fa-li fa-solid fa-code"></i><strong>Software:</strong> C, C#, Python,
+                                        HTML, CSS, JavaScript, Bash, Shell scripting</li>
+                                    <li><i class="fa-li fa-solid fa-microchip"></i><strong>Hardware:</strong> Verilog,
+                                        SystemVerilog, UVM, PCB Design</li>
+                                    <li><i class="fa-li fa-solid fa-desktop"></i><strong>MCU & FPGA:</strong> Arduino,
+                                        STM32, ESP32, DE10 Standard,...</li>
+                                    <li><i class="fa-li fa-solid fa-tools"></i><strong>Tools:</strong> MATLAB, VSCode,
+                                        Vivado, QuestaSim, Synopsys ICC2,...</li>
+                                    <li><i class="fa-li fa-solid fa-people-group"></i><strong>Soft Skills:</strong>
+                                        Communication, teamwork, and project management,...</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3 style="margin-top: 3rem;">interests</h3>
+                        <div class="article-style">
+                            <ul class="ul-interests fa-ul mb-0">
+                                <li>
+                                    <i class="fa-li fa-solid fa-feather-alt"></i>
+                                    <strong>Writing Poetry:</strong> I enjoy writing poetry in both Vietnamese and
+                                    English. It's one of my favorite ways to relax and express emotions.
+                                    Some of my poems are shared here:
+                                    <div class="btn-links mt-2 mb-3">
+                                        <a class="btn btn-outline-primary btn-page-header" href="interests/poems.html">
+                                            poems →
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa-solid fa-music"></i>
+                                    <strong>Coding and Music:</strong> I have a strong interest in playing musical
+                                    instruments. However, due to certain limitations, I haven't had access to real
+                                    instruments. Instead, I began coding and creating virtual sounds to simulate
+                                    instruments on my computer.
+                                    Some piano pieces I’ve played can be found here:
+                                    <div class="btn-links mt-2 mb-3">
+                                        <a class="btn btn-outline-primary btn-page-header" href="interests/piano.html">
+                                            piano music →
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-li fa-solid fa-pen-nib"></i>
+                                    <strong>Reflective Writing:</strong> I love writing essays and short stories
+                                    inspired by real-life experiences. I've participated in several writing contests and
+                                    received recognition.
+                                    Some of the writing I posted on my Facebook page:
+                                    <div class="btn-links mt-2">
+                                        <a class="btn btn-outline-primary btn-page-header"
+                                            href="https://www.facebook.com/nhat.ninh.173963" target="_blank">
+                                            essays and stories →
+                                        </a>
+                                    </div>
+                                </li>
+                                <li><i class="fa-li fa-solid fa-running"></i>
+                                    <strong>Other Interests:</strong> I also enjoy exploring new places and playing
+                                    sports, especially football, in which I received several awards during high school.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================== -->
+        <!--              SECTION: ENTREPRENEURIAL JOURNEY              -->
+        <!-- ========================================================== -->
+        <section id="experience" class="home-section wg-experience">
+            <div class="home-section-bg"></div>
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                        <h1 class="mb-0">Experience</h1>
+                    </div>
+
+                    <div class="col-12 col-lg-8">
+                        <!-- Startup Experience Item -->
+                        <div class="card-simple">
+                            <div class="card-body">
+                                <h3 class="article-title mb-2">
+                                    <!-- Đổi vai trò thành Technical Contributor -->
+                                    <a href="experience/startup-journey.html">Startup Experience – Custom Packaging &
+                                        Logo Printing Solutions</a>
+                                </h3>
+                                <div class="article-meta mb-2">
+                                    <span>Mar 2024 – Apr 2025</span>
+                                </div>
+                                <div class="article-style">
+                                    <p>
+                                        Supported and helped develop my brother's startup, which provides custom
+                                        branding solutions through silkscreen printing on plastic packaging such as cups
+                                        and bags, and also distributes fruit protection sleeves.
+                                        We help coffee shop, food vendors, and agricultural producers promote their
+                                        brand directly through packaging.
+                                    </p>
+                                    <h6>Business scope includes:</h6>
+                                    <p>- Supplying plastic cups, bags, and printing custom logos using silkscreen
+                                        techniques.</p>
+                                    <p>- Collaborating with coffee producers to distribute goods to cafés while
+                                        introducing branded packaging services.</p>
+                                    <p>- Distributing foam fruit sleeves to farming households and local vendors.</p>
+                                    <h6>My contributions:</h6>
+                                    <p>- Searched for and contributed funding to support R&D and startup operations.</p>
+                                    <p>- Researched and engineered efficient, low-cost printing equipment tailored for
+                                        plastic cup and bag branding.</p>
+                                    <p>- Designed an automatic packing machine for foam fruit sleeves to help farmers
+                                        save time and labor.</p>
+                                    <div class="featured-project-box">
+                                        <div class="project-box-header">
+                                            <i class="fas fa-lightbulb mr-2"></i> <!-- Icon cho R&D -->
+                                            <strong>One of the R&D projects:</strong>
+                                        </div>
+                                        <div class="project-box-body">
+                                            <h5 class="project-box-title">
+                                                <a href="experience/automated-packaging-machine.html">Automated Fruit
+                                                    Foam Sleeve Packaging Machine</a>
+                                            </h5>
+                                            <p>
+                                                This was a research and prototyping project developed during the time of
+                                                the startup.
+                                                The goal was to create a model for an automated machine that prepares
+                                                foam fruit sleeves, addressing the time-consuming manual labor faced by
+                                                farmers.
+                                            </p>
+                                            <a class="btn btn-outline-primary btn-sm mt-2"
+                                                href="experience/automated-packaging-machine.html">
+                                                View Project Details →
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <a class="btn btn-outline-primary btn-sm mt-3" href="experience/startup-journey.html">
+                                Read The Full Journey →
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="accomplishments" class="home-section wg-experience">
+            <div class="home-section-bg"></div>
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                        <h1 class="mb-0">Accomplish­ments</h1>
+                    </div>
+
+                    <div class="col-12 col-lg-8">
+                        <div class="row experience">
+                            <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                <div class="row h-50">
+                                    <div class="col"> </div>
+                                    <div class="col"> </div>
+                                </div>
+                                <div class="m-2"><span class="badge badge-pill border"> </span></div>
+                                <div class="row h-50">
+                                    <div class="col border-right"> </div>
+                                    <div class="col"> </div>
+                                </div>
+                            </div>
+                            <div class="col py-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-content-start">
+                                            <!-- <div class="mr-2 mb-2">
+                                                <a href="https://xiaogezhang.com/" target="_blank" rel="noopener">
+                                                    
+                                                    <i class="fas fa-university fa-3x company-logo"></i> 
+                                                </a>
+                                            </div> -->
+                                            <div>
+                                                <div class="section-subheading card-title exp-title text-muted my-0">
+                                                    <b>Received a letter of recommendation from Professor Min-Fu Hsieh
+                                                        for admission to the Master's program at National Cheng Kung
+                                                        University (NCKU), Taiwan [7/2024]</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <ul>
+                                                <li>Appointed class leader for the short-term course “Wide Bandgap
+                                                    Semiconductor Power Transistors and Applications”
+                                                    taught by Professor Min-Fu Hsieh from National Cheng Kung University
+                                                    (NCKU), Taiwan.
+                                                    Upon completion of the course, I was invited to an interview with
+                                                    <a href="https://researchoutput.ncku.edu.tw/en/persons/min-fu-hsieh"
+                                                        target="_blank"
+                                                        style="color: rgb(5, 179, 248); text-decoration: none;">
+                                                        Professor Min-Fu Hsieh
+                                                    </a>
+                                                    and
+                                                    <a href="https://researchoutput.ncku.edu.tw/en/persons/chin-lung-yang"
+                                                        target="_blank"
+                                                        style="color: rgb(5, 179, 248); text-decoration: none;">
+                                                        Professor Chin-Lung Yang
+                                                    </a>, and subsequently received a letter of recommendation for
+                                                    future Master’s studies at NCKU, if I decide to pursue graduate
+                                                    studies there.
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience Item 1 -->
+
+                        <div class="row experience">
+                            <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                <div class="row h-50">
+                                    <div class="col border-right"> </div>
+                                    <div class="col"> </div>
+                                </div>
+                                <div class="m-2"><span class="badge badge-pill border"> </span></div>
+                                <div class="row h-50">
+                                    <div class="col border-right"> </div>
+                                    <div class="col"> </div>
+                                </div>
+                            </div>
+                            <div class="col py-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-content-start">
+                                            <div>
+                                                <div class="section-subheading card-title exp-title text-muted my-0">
+                                                    <b>Achieved First Prize in the 16th
+                                                        ELabs Academic Competition [10/2023]</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <ul>
+                                                <li>Organizer: The competition is organized annually
+                                                    by the Faculty of Electronics and Telecommunications at the
+                                                    University of Science, VNU-HCM (HCMUS).</li>
+                                                <br>
+                                                <li>Participants: The competition is open to students passionate about
+                                                    electronics and telecommunications from all universities,
+                                                    colleges, and institutes of science and engineering across Ho Chi
+                                                    Minh City.
+                                                    Participants work in teams to tackle both theoretical and hands-on
+                                                    technical challenges.</li>
+                                                <br>
+                                                <li>Competition Structure: <br>
+
+                                                    Preliminary Round: Completed a quiz of 45 main and 5 supplemental
+                                                    multiple-choice questions.
+
+                                                    <br>
+                                                    <br>
+                                                    Semifinal Round:
+
+                                                    <br>+ E-Labs Station Run: Solved a series of theoretical and
+                                                    hands-on tasks organized by topic at various stations.
+
+                                                    <br>+ E-Labs Idea Pitch: Proposed an innovative idea/startup concept
+                                                    or research direction in electronics, telecommunications, or IT with
+                                                    modern technological trends.
+
+                                                    <br>
+                                                    <br>Final Round:
+
+                                                    <br>+ Warm-up: Quick questions to kick off the challenge
+
+                                                    <br>+ Data Decoding: Analytical problem-solving round
+
+                                                    <br>+ Debate: Teams discuss, defend, and critique solutions live
+
+                                                    <br>+ FETELER Spirit: A rapid-response and pressure-testing
+                                                    challenge
+                                                </li>
+                                                <br>
+                                                <li>My Role: Team leader
+                                                    <br>Actively researched, contacted organizers, and kept the team
+                                                    informed about rules and preparation requirements.
+                                                    <br>Planned team schedules, coordinated communication, and kept
+                                                    members on track.
+                                                    <br> Represented the team in debate and Q&A rounds, defending our
+                                                    ideas and challenging opposing arguments.
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Experience Item 2 -->
+                        <div class="row experience">
+                            <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                <div class="row h-50">
+                                    <div class="col border-right"> </div>
+                                    <div class="col"> </div>
+                                </div>
+                                <div class="m-2"><span class="badge badge-pill border"> </span></div>
+                                <div class="row h-50">
+                                    <div class="col border-right"> </div>
+                                    <div class="col"> </div>
+                                </div>
+                            </div>
+                            <div class="col py-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-content-start">
+                                            <div>
+                                                <div class="section-subheading card-title exp-title text-muted my-0">
+                                                    <b>Achieved Third Prize in the F-Race
+                                                        Model Car Competition [4/2023]</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <ul>
+                                                <li>Organizer: The F‑Race is an annual academic and engineering
+                                                    competition
+                                                    organized by the Faculty of Electronics and Telecommunications,
+                                                    University of Science – VNU-HCM (HCMUS)</li>
+                                                <br>
+                                                <li>Participants: F‑Race is open to both university students and high
+                                                    school students in Ho Chi Minh City,
+                                                    aiming to nurture interest in technology and robotics at an early
+                                                    stage. </li>
+                                                <br>
+                                                <li>Competition Objective: The competition challenges participants to
+                                                    design, build,
+                                                    and program autonomous or semi-autonomous model cars
+                                                    that can navigate custom tracks using onboard sensors and control
+                                                    systems.
+                                                    It combines practical domains such as circuit design, embedded
+                                                    programming,
+                                                    signal processing, and algorithmic pathfinding.</li>
+                                                <br>
+                                                <li>My Role: My main role in the team was to serve as the team leader,
+                                                    guiding overall strategy and coordination.
+                                                    I was also responsible for researching control algorithms,
+                                                    writing and debugging code for the MCU
+                                                    to ensure the model car performed optimally on the track.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience Item: -->
+                        <div class="row experience">
+                            <div class="col-auto text-center flex-column d-none d-sm-flex">
+                                <div class="row h-50">
+                                    <div class="col border-right"> </div>
+                                    <div class="col"> </div>
+                                </div>
+                                <div class="m-2"><span class="badge badge-pill border"> </span></div>
+                                <div class="row h-50">
+                                    <div class="col"> </div>
+                                    <div class="col"> </div>
+                                </div>
+                            </div>
+                            <div class="col py-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-content-start">
+                                            <div>
+                                                <div class="section-subheading card-title exp-title text-muted my-0">
+                                                    <b>Successfully passed the casting
+                                                        for The Brain Vietnam Season 3 with good observation abilities
+                                                        [May 2022 – August 2022]</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-text">
+                                            <ul>
+                                                <li><a href="https://www.youtube.com/watch?v=VfJbknR_svI&list=PLPxahwCP4YyB2umLREc4l_pHjOKzQr7Xo&index=1"
+                                                        target="_blank"
+                                                        style="color: rgb(5, 179, 248); text-decoration: none;">
+                                                        The Brain Vietnam
+                                                    </a> is the Vietnamese adaptation of the international show “The
+                                                    Brain”,
+                                                    originally from Germany. It aims to discover and showcase
+                                                    individuals with extraordinary cognitive abilities,
+                                                    such as memory feats, rapid calculation, pattern recognition, and
+                                                    more,... . The show successfully completed its first and second
+                                                    seasons,
+                                                    with Season 1 especially highlighted by an international exchange
+                                                    round featuring outstanding contestants from Vietnam alongside top
+                                                    participants from <a href="https://www.youtube.com/watch?v=etLY7VnRSBM&list=PLPxahwCP4YyB2umLREc4l_pHjOKzQr7Xo&index=10"
+                                                    target="_blank"
+                                                        style="color: rgb(5, 179, 248); text-decoration: none;">Germany </a>
+                                                    and <a href="https://www.youtube.com/watch?v=wgEMQbwtLO4"
+                                                    target="_blank"
+                                                        style="color: rgb(5, 179, 248); text-decoration: none;">Japan</a>.
+                                                </li>
+                                                <br>
+                                                <li>The show features a panel of distinguished judges
+                                                    who bring expertise in cognitive science, memory training, and
+                                                    education:
+                                                    <br>
+                                                    <br>+ Assoc. Prof. Dr. Tran Thanh Nam — A respected academic and
+                                                    expert in cognitive psychology,
+                                                    who provides scientific guidance and ensures the rigor of the
+                                                    competition.
+                                                    <br>
+                                                    <br>+ Duong Anh Vu — A renowned memory champion and PhD candidate in
+                                                    Education, holding multiple world memory records;
+                                                    he serves as the Chief Scientific Advisor and memory expert judge.
+                                                </li>
+
+                                                <br>
+                                                <li>My Achieved:
+                                                    <br>Passed the extreme challenge rounds with advanced visual
+                                                    discrimination ability. Sample tasks included memorizing, observing,
+                                                    and identifying differences among tens of thousands of similar
+                                                    moving pixels between two videos,
+                                                    or between two nearly identical images.
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="home-section wg-portfolio">
+            <div class="home-section-bg"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="section-heading col-12 mb-3 text-center">
+                        <h1 class="mb-0">Projects</h1>
+                    </div>
+                    <div class="col-12">
+                        <div class="project-toolbar">
+                            <div class="project-filters">
+                                <div class="btn-toolbar d-flex justify-content-center">
+                                    <div class="btn-group flex-wrap">
+                                        <a href="#" data-filter="*" class="btn btn-primary btn-lg active">All</a>
+                                        <a href="#" data-filter=".js-id-ai" class="btn btn-primary btn-lg">Computer
+                                            vision</a>
+                                        <a href="#" data-filter=".js-id-biomedical"
+                                            class="btn btn-primary btn-lg">Biomedical Electronics</a>
+                                        <a href="#" data-filter=".js-id-management-system"
+                                            class="btn btn-primary btn-lg">Application</a>
+                                        <a href="#" data-filter=".js-id-robotics"
+                                            class="btn btn-primary btn-lg">Robotics</a>
+                                        <a href="#" data-filter=".js-id-software-engineering"
+                                            class="btn btn-primary btn-lg">circuit and VLSI Design</a>
+                                        <a href="#" data-filter=".js-id-other" class="btn btn-primary btn-lg">Other</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="isotope projects-container row js-layout-row project-showcase">
+                            <!-- Project Item 1 -->
+                            <div class="col-12 isotope-item js-id-ai">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="projects/project-qr-code.html">QR Code and Multiple-Choice
+                                                    Answer Sheet Image Processing </a>
+                                            </div>
+
+                                            <div class="article-style">
+                                                <p>    A Computer Vision project to process noisy, distorted QR codes
+                                                    and automatically
+                                                    grade multiple-choice answer sheets using Python. </p>
+                                                <p><i>[November, 2024 - January, 2025]</i></p>
+                                                <p>Team size: 3 | My role: Team Leader</p>
+                                            </div>
+
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-qr-code.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-qr-code.html">
+                                                <img src="./img/result_distorted_QR.png" alt="QR Code Project"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- The Modal (Lightbox) -->
+                                <div id="imageModal" class="modal">
+                                    <span class="close-modal">×</span>
+                                    <img class="modal-content" id="img01">
+                                    <div id="caption"></div>
+                                </div>
+                            </div>
+                            <!-- Project Item 2 -->
+                            <div class="col-12 isotope-item js-id-ai">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <!-- Link đến trang chi tiết -->
+                                                <a href="projects/project-Attendance.html">Personal Project: QR Code
+                                                    Attendance App</a>
+                                            </div>
+                                            <div class="article-style">
+                                                <p>    Designed and developed a simple QR code-based attendance
+                                                    application to support lecturers in recording student attendance
+                                                    efficiently.
+                                                    This personal project provides an alternative to traditional
+                                                    roll-calling or using additional hardware like student ID scanners.
+                                                </p>
+                                                <p><i>[December, 2024 - January, 2025]</i></p>
+                                            </div>
+
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-Attendance.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-Attendance.html">
+                                                <img src="./img/Attendance1.png" alt="QR Code Project" loading="lazy"
+                                                    class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Biomedical EMG & ECG -->
+                            <div class="col-12 isotope-item js-id-biomedical">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="projects/project-emg-ecg.html">Biomedical Circuit Design for
+                                                    EMG & ECG Measurement</a>
+                                            </div>
+                                            <div class="article-style">
+                                                <p>    A final-year biomedical electronics project focused on designing
+                                                    an analog circuit that can measure both muscle (EMG) and heart (ECG)
+                                                    signals on a breadboard.</p>
+                                                <p><i>[November, 2024 - January, 2025]</i></p>
+                                                <p>Team size: 5 | My role: Team Leader</p>
+                                            </div>
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-emg-ecg.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-emg-ecg.html">
+                                                <img src="./img/Biomedical0.png" alt="EMG ECG Circuit Project"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--       Project Application: CYCLE REPETITION LEARNING APP   -->
+                            <div class="col-12 isotope-item js-id-management-system">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+
+                                        <!-- left content -->
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="projects/project-cycle-repetition-app.html">Cycle Repetition
+                                                    English Learning App</a>
+                                            </div>
+
+                                            <div class="article-style">
+                                                <p>    A C# and WPF desktop application designed to help users learn
+                                                    English vocabulary and sentences by combining Spaced Repetition and
+                                                    Pomodoro techniques.</p>
+                                                <p><i>[April, 2024 - June, 2024]</i></p>
+                                                <p>Team size: 4 | My role: Team Leader</p>
+                                            </div>
+
+                                            <!-- "View Details" -->
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-cycle-repetition-app.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-cycle-repetition-app.html">
+                                                <img src="./img/en_cycle_app1.png" alt="Cycle Repetition App"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--                    CLIPBOARD TRANSLATOR APP                -->
+                            <div class="col-12 isotope-item js-id-management-system">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+
+                                        <!-- left content -->
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="projects/project-clipboard-translator.html">Personal Project:
+                                                    Clipboard
+                                                    Translator & Vocabulary Saver</a>
+                                            </div>
+
+                                            <!-- -->
+                                            <div class="article-style">
+                                                <p>    A Python-based personal project that instantly translates English
+                                                    text from the clipboard and saves vocabulary for later review, using
+                                                    global keyboard shortcuts.</p>
+                                                <p><i>[April, 2025 - May, 2025]</i></p>
+                                            </div>
+
+                                            <!--  "View Details" -->
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-clipboard-translator.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- img -->
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-clipboard-translator.html">
+                                                <img src="./img/clipboard_trans0.png" alt="Clipboard Translator App"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--                         LINE FOLLOWER ROBOT                -->
+                            <div class="col-12 isotope-item js-id-robotics">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="projects/project-line-follower-robot.html">Line Follower Robot
+                                                    with Obstacle Avoidance</a>
+                                            </div>
+                                            <div class="article-style">
+                                                <p>    Designed and built an autonomous robot using Arduino Uno R3 that
+                                                    follows a black line and stops upon detecting an obstacle. </p>
+                                                <p><i>[March, 2023 - April, 2023]</i></p>
+                                                <p>Team size: 3 | My role: Team Leader</p>
+                                            </div>
+
+                                            <!-- "View Details" -->
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-line-follower-robot.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-line-follower-robot.html">
+                                                <img src="./img/Robot_Line2.jpg" alt="Line Follower Robot"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--                         ROBOTIC ARM CONTROL                -->
+                            <div class="col-12 isotope-item js-id-robotics">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="projects/project-robotic-arm.html">Bluetooth-Controlled Robotic
+                                                    Arm via C# Application</a>
+                                            </div>
+                                            <div class="article-style">
+                                                <p>    A comprehensive project involving hardware design, PCB layout,
+                                                    embedded programming for an STM32-based robotic arm, and a C#
+                                                    desktop application for wireless control via Bluetooth.
+                                                </p>
+                                                <p><i>[April, 2023 - June, 2023]</i></p>
+                                                <p>Team size: 5 | My role: Team Leader</p>
+                                            </div>
+
+                                            <!-- "View Details" -->
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-robotic-arm.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-robotic-arm.html">
+                                                <img src="./img/robot_arm3.png" alt="Bluetooth Robotic Arm"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--             VOICE CONTROLLED CAR (MFCC)                    -->
+                            <div class="col-12 isotope-item js-id-robotics">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="projects/project-voice-car.html">Voice-Controlled Car with
+                                                    Custom Speech Recognition (MFCC)</a>
+                                            </div>
+
+                                            <div class="article-style">
+                                                <p>    An advanced Microcontroller project to control a model car via a
+                                                    custom Android app. The core feature is a from-scratch speech
+                                                    recognition system implemented on an STM32F4, using the MFCC
+                                                    algorithm without external libraries.
+                                                </p>
+                                                <p><i>[May, 2023 - July, 2023]</i></p>
+                                                Team size: 3 | My role: Member
+                                            </div>
+
+                                            <!-- "View Details" -->
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-voice-car.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-voice-car.html">
+                                                <img src="./img/robot_voice4.png" alt="Voice Controlled Car"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--       AUDIO AMPLIFIER DESIGN                  -->
+                            <div class="col-12 isotope-item js-id-software-engineering">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="projects/project-audio-amplifier.html">MOSFET Audio Amplifier
+                                                    and Power Supply Design</a>
+                                            </div>
+
+                                            <div class="article-style">
+                                                <p>    A comprehensive electronics design project involving the
+                                                    simulation, PCB layout, and implementation of a MOSFET-based audio
+                                                    amplifier and a dual power supply circuit.</p>
+                                                <p><i>[March, 2024 - April, 2024]</i></p>
+                                                Team size: 2 | My role: Partner
+                                            </div>
+
+                                            <!-- "View Details" -->
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-audio-amplifier.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-audio-amplifier.html">
+                                                <img src="./img/Amplifier12.png" alt="Audio Amplifier Project"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--            VLSI UART IP CORE DESIGN          -->
+                            <div class="col-12 isotope-item js-id-software-engineering">
+                                <div class="col-lg-12 mb-5 view-showcase">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-6">
+                                            <div class="section-subheading article-title mb-0 mt-0">
+                                                <a href="projects/project-uart-vlsi.html">Personal Project: VLSI Design
+                                                    of a UART IP Core
+                                                    with FIFO and Security</a>
+                                            </div>
+
+                                            <div class="article-style">
+                                                <p>    A personal project focused on designing a modern UART IP core
+                                                    from the ground up, featuring integrated FIFOs and an experimental
+                                                    LFSR-based keystream generator for data security, simulated in
+                                                    Vivado.</p>
+                                                <p><i>[February, 2025 - April, 2025]</i></p>
+                                            </div>
+
+                                            <!-- "View Details" -->
+                                            <div class="btn-links mt-2">
+                                                <a class="btn btn-outline-primary btn-page-header"
+                                                    href="projects/project-uart-vlsi.html">
+                                                    View Details →
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 order-first order-md-last">
+                                            <a href="projects/project-uart-vlsi.html">
+                                                <img src="./img/vlsi1.png" alt="UART IP Core Block Diagram"
+                                                    loading="lazy" class="img-fluid">
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities" class="home-section wg-collection">
+            <div class="home-section-bg"></div>
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                        <h1 class="mb-0">Other Activities</h1>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="media stream-item view-compact">
+                            <div class="media-body">
+                                <div class="section-subheading article-title mb-0 mt-0"><a
+                                        href="https://www.facebook.com/share/p/1DCxU4Q8wc/" target="_blank">Participant
+                                        – Academic and Cultural Exchange with Hong Kong Polytechnic University</a></div>
+                                <div class="stream-meta article-metadata" style="text-align: right;">
+                                    <div><span>[June 5, 2025]</span><span class="middot-divider"></span><span>HCMUS, Ho
+                                            Chi Minh city</span></div>
+                                </div>
+                                <a class="summary-link">
+                                    <div class="article-style" style="padding-left: 10px;">Took part as one of 30 HCMUS
+                                        students in an academic and cultural exchange with Hong Kong Polytechnic
+                                        University.
+                                        Engaged in discussions on academic models, research collaboration, and student
+                                        activities.
+                                        Participated in workshops on studying in Hong Kong and green campus culture, as
+                                        well as interactive group activities and musical performances.</div>
+
+                                </a>
+                            </div>
+                            <div class="ml-3">
+                                <a><img src="./img/exchange.jpg" alt="DSDP Showcase" loading="lazy"
+                                        style="max-width: 200px; height: auto; border-radius: 6px;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="media stream-item view-compact">
+                            <div class="media-body">
+                                <div class="section-subheading article-title mb-0 mt-0"><a
+                                        href="https://web.facebook.com/photo/?fbid=1866993946837875&set=p.1866993946837875"
+                                        target="_blank">Participated in the writing contest: “Writing about Characters
+                                        in the Works of Nguyễn Nhật Ánh”</a></div>
+                                <div class="stream-meta article-metadata" style="text-align: right;">
+                                    <div><span>[March, 2022]</span></div>
+                                </div>
+                                <a class="summary-link">
+                                    <div class="article-style" style="padding-left: 10px;">Organized by World Memory
+                                        Record Holder Dương Anh Vũ in collaboration with sponsoring enterprises.
+                                        Received an Honorable Mention for my essay, which explored the personalities and
+                                        inner worlds of Nguyễn Nhật Ánh’s characters.</div>
+                                </a>
+
+                                <div class="btn-links">
+                                    <a class="btn btn-outline-primary btn-page-header btn-sm"
+                                        href="https://web.facebook.com/photo/?fbid=1866993946837875&set=p.1866993946837875"
+                                        target="_blank" rel="noopener noreferrer"> information_1</a>
+
+                                    <a class="btn btn-outline-primary btn-page-header btn-sm"
+                                        href="https://www.facebook.com/share/p/16atsbnveH/" target="_blank"
+                                        rel="noopener noreferrer"> information_2</a>
+                                </div>
+
+                            </div>
+                            <div class="ml-3">
+                                <a></a><img src="./img/Activity_writing.jpg" alt="DSDP Showcase" loading="lazy"
+                                    style="max-width: 200px; height: auto; border-radius: 6px;">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="media stream-item view-compact">
+                            <div class="media-body">
+                                <div class="section-subheading article-title mb-0 mt-0"><a
+                                        href="https://drive.google.com/drive/folders/1oCGuFf0t_e5irBcFLXHMpJuka-BFwMqn?usp=drive_link"
+                                        target="_blank">Participated in making Mid-Autumn Festival lanterns for
+                                        children</a></div>
+                                <div class="stream-meta article-metadata" style="text-align: right;">
+                                    <div><span>[September 2020]</span></div>
+                                </div>
+                                <a class="summary-link">
+                                    <div class="article-style" style="padding-left: 10px;">Prepared materials and
+                                        handcrafted traditional lanterns for children in my hometown,
+                                        aiming to bring them joy and a memorable festive experience.</div>
+                                </a>
+
+                            </div>
+                            <div class="ml-3">
+                                <a><img src='https://i.postimg.cc/tnTsDct2/01.jpg' alt="DSDP Showcase" loading="lazy"
+                                        style="max-width: 250px; height: auto; border-radius: 6px;">
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="media stream-item view-compact">
+                            <div class="media-body">
+                                <div class="section-subheading article-title mb-0 mt-0"><a
+                                        href="https://www.facebook.com/share/p/1AbytBeBQ1/" target="_blank">Participated
+                                        in the “Me and Books” Review Writing Contest (Cuộc thi Viết Review Tôi và
+                                        Sách)</a></div>
+                                <div class="stream-meta article-metadata" style="text-align: right;">
+                                    <div><span>[April 2020 - July 2020]</span></div>
+                                </div>
+                                <a class="summary-link">
+                                    <div class="article-style" style="padding-left: 10px;">Wrote a review about a
+                                        favorite book I had read as part of the “Me and Books” contest.
+                                        My entry was selected among the Top 8 best reviews,
+                                        earning me an invitation to join an experiential trip and a Leadership training
+                                        course organized by S2P (Student To Professional).</div>
+                                </a>
+                                <div class="btn-links">
+                                    <a class="btn btn-outline-primary btn-page-header btn-sm"
+                                        href="https://www.facebook.com/share/p/1AbytBeBQ1/" target="_blank"
+                                        rel="noopener noreferrer"> information_1</a>
+                                    <a class="btn btn-outline-primary btn-page-header btn-sm"
+                                        href="https://web.facebook.com/share/p/1ZdHudLKbs/" target="_blank"
+                                        rel="noopener noreferrer"> information_2</a>
+                                </div>
+
+                            </div>
+                            <div class="ml-3">
+                                <a><img src='https://scontent-sin6-1.xx.fbcdn.net/v/t1.6435-9/106372908_2144775922335330_5917743582242659242_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHXVN9GHC-giib8UWk8I-W7gkfwTWuyNASCR_BNa7I0BAqMX7o7GwslS-dhckCpIoW8malLkEer6a2oUM0ygZS-&_nc_ohc=VhD-jZW2KsgQ7kNvwFG-p01&_nc_oc=AdnjOJ5pcdjvPEEIq0Y5bshtLK1XHInbOzFsn6uW86QDV9Nu7VoAEOPY7quNBuFD7SAdkgiswxXeJIDnTLFBF3IR&_nc_zt=23&_nc_ht=scontent-sin6-1.xx&_nc_gid=pkwLw78fpp2rniamp0IIcw&oh=00_AfMTZIOEt47vJqm-TpmFBcGZ6UXyht8PHnOaChYgQOzbOQ&oe=6871239F'
+                                        alt="DSDP Showcase" loading="lazy"
+                                        style="max-width: 200px; height: auto; border-radius: 6px;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="home-section wg-contact">
+            <div class="home-section-bg"></div>
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+                        <h1 class="mb-0">Get In Touch</h1>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <p>I’m interested in opportunities in Information Technology, Hardware Engineering and
+                            Semiconductor. Feel free to reach out to me for any questions or collaborations!</p>
+
+                        <!-- Form contact -->
+                        <div class="mb-3">
+                            <form method="post" name="contact" data-netlify="true">
+                                <div class="form-group form-inline"><input type="text" name="name"
+                                        class="form-control w-100" id="inputName" placeholder="Name" required></div>
+                                <div class="form-group form-inline"><input type="email" name="email"
+                                        class="form-control w-100" id="inputEmail" placeholder="Email" required></div>
+                                <div class="form-group"><textarea name="message" class="form-control" id="inputMessage"
+                                        rows="5" placeholder="Message" required></textarea></div>
+                                <button type="submit" class="btn btn-primary px-3 py-2 w-100">Send Message</button>
+                            </form>
+                        </div>
+
+                        <ul class="fa-ul">
+                            <!-- Email -->
+                            <li>
+                                <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
+                                <span id="person-email"><a
+                                        href="mailto:ninhdoannhat@gmail.com">ninhdoannhat@gmail.com</a></span>
+                            </li>
+
+                            <!-- Address -->
+                            <li>
+                                <i class="fa-li fas fa-map-marker-alt fa-2x" aria-hidden="true"></i>
+                                <span id="person-address">Ho Chi Minh City, Vietnam</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div><!-- End page-body -->
+
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+
+                <p class="copyright-license-text">
+                    © 2025 Ninh Doan Nhat. All Rights Reserved.
+                </p>
+                <p class="footer-social-icons">
+                    <a href="https://www.facebook.com/nhat.ninh.173963" target="_blank" rel="noopener"
+                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="https://www.instagram.com/nin_nichi_dnn/" target="_blank" rel="noopener"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+                    <a href="https://github.com/NinNichiCode" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                </p>
+
+                <p class="powered-by">
+                    Design inspired by Wowchemy
+                </p>
+
+            </footer>
+        </div>
+    </div>
+
+
+    <!--                   FILE JAVASCRIPT                          -->
+    <!-- 1. jQuery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- 2. Popper.js and Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- 3.  Isotope (isotope.pkgd) -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- 4. File script -->
+    <script src="js/script.js"></script>
+
+</body> 
+
+</html> 
