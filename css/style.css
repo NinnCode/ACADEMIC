@@ -784,3 +784,31 @@ body.dark-mode .featured-project-box .project-box-header {
 body.dark-mode .featured-project-box .project-box-title a:hover {
     color: #64b5f6;
 }
+
+
+/* /////////////*/
+
+.video-container {
+    /* 1. Kích thước và căn giữa */
+    max-width: 700px; /* Đặt chiều rộng tối đa bạn muốn cho video */
+    width: 90%;
+    margin: 2rem auto; /* Căn giữa */
+
+    /* 2. Kiểu dáng */
+    background-color: #000;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    overflow: hidden; /* Đảm bảo bo góc cho iframe bên trong */
+}
+
+.video-container iframe {
+    /* 3. Responsive và Tỷ lệ khung hình */
+    width: 100%;
+    height: auto; /* Để chiều cao tự tính toán */
+
+    aspect-ratio: 4 / 3; 
+    
+    display: block; 
+    border: none;
+}
+ 
